@@ -9,7 +9,6 @@ const port = 12345; // set this port in competitive-companion extension on your 
 app.post('/', (req, res) => {
     const data = req.body;
     tests = [];
-    console.log(data);
 
     for(test of data['tests']) {
         tests.push({
